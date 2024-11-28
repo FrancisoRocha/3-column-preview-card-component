@@ -1,0 +1,28 @@
+:root{
+    --fuenteUno: "Big Shoulders Display", sans-serif;
+    --fuenteDos: "Lexend Deca", serif;
+    --cardUno: hsl(31, 77%, 52%);
+    --cardDos: hsl(184, 100%, 22%);
+    --cardTres: hsl(179, 100%, 13%);
+    --texto: hsla(0, 0%, 100%, 0.75);
+    --bgColor: hsl(0, 0%, 95%);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* 1rem = 10px */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/*? UTILIDADES */
+
+body{
+    background-color: teal;
+}
+
