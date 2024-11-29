@@ -168,11 +168,11 @@ body{
     color: var(--cardUno);
 }
 
-.card__two{
+.two{
     color: var(--cardDos);
 }
 
-.card__three{
+.three{
     color: var(--cardTres);
 }
 
