@@ -22,7 +22,176 @@ html {
 
 /*? UTILIDADES */
 
-body{
-    background-color: teal;
+h3{
+    margin: 0;
+}
+p{
+    margin: 0;
 }
 
+
+body{
+    background-color: var(--bgColor);
+}
+
+/* CONTENEDOR */
+.card__contenido{
+    width: 32rem;
+    height: 132rem;
+    margin: 8rem auto;
+    background-color: var(--cardUno);
+    border-radius: 1rem;
+}
+
+@media (min-width: 768px){
+    .card__contenido{
+        display: flex;
+        width: 70rem;
+        height: 50rem;
+        margin: 30rem auto;
+    }
+}
+
+@media (min-width: 992px){
+    .card__contenido{
+        width: 92rem;
+        height: 50rem;
+        margin: 15rem auto;
+    }
+}
+
+.card__one{
+    height: 44rem;
+    padding: 4.9rem;
+}
+
+@media (min-width: 768px){
+    .card__one{
+        width: 30rem;
+        height: auto;
+    }
+}
+
+@media (min-width: 992px){
+    .card__one{
+        width: 40rem;
+        height: auto;
+    }
+}
+
+.card__two{
+    height: 44rem;
+    background-color: var(--cardDos);
+    padding: 4.9rem;
+}
+
+@media (min-width: 768px){
+    .card__two{
+        width: 30rem;
+        height: auto;
+    }
+}
+
+@media (min-width: 992px){
+    .card__two{
+        width: 40rem;
+        height: auto;
+    }
+}
+
+.card__three{
+    height: 44rem;
+    background-color: var(--cardTres);
+    border-radius: 0 0 1rem 1rem;
+    padding: 4.9rem;
+}
+
+@media (min-width: 768px){
+    .card__three{
+        width: 30rem;
+        height: auto;
+        border-radius: 0 1rem 1rem 0;
+    }
+}
+
+@media (min-width: 992px){
+    .card__three{
+        width: 40rem;
+        height: auto;
+        border-radius: 0 1rem 1rem 0rem;
+    }
+}
+
+.card__info{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.card__title{
+    font-family: var(--fuenteUno);
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--bgColor);
+}
+
+.card__texto{
+    font-family: var(--fuenteDos);
+    font-size: 1.5rem;
+    color: var(--bgColor);
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: left;
+}
+
+@media (min-width: 992px){
+    .card__texto{
+        width: 20rem;
+    }
+}
+
+.card__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 14rem;
+    height: 4.8rem;
+    background-color: var(--bgColor);
+    border-radius: 2.5rem;
+    font-size: 1.5rem;
+    font-family: var(--fuenteDos);
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.one{
+    color: var(--cardUno);
+}
+
+.card__two{
+    color: var(--cardDos);
+}
+
+.card__three{
+    color: var(--cardTres);
+}
+
+.card__contenido > div:nth-of-type(1) .card__link:hover{
+    background-color: var(--cardUno);
+    color: var(--bgColor);
+    border: .3rem solid #fff;
+    transition: all 300ms;
+}
+
+.card__contenido > div:nth-of-type(2) .card__link:hover{
+    background-color: var(--cardDos);
+    color: var(--bgColor);
+    border: .3rem solid #fff;
+    transition: all 300ms;
+}
+.card__contenido > div:nth-of-type(3) .card__link:hover{
+    background-color: var(--cardTres);
+    color: var(--bgColor);
+    border: .3rem solid #fff;
+    transition: all 300ms;
+}
